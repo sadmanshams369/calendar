@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
+    <style>
+        .calendar{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 70px repeat(5, 50px);
+            row-gap: 15px;
+            column-gap: 25px;
+        }
+        .date, .day{
+            background-color: skyblue;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .day{
+            background-color: lightgray;
+            font-size: 1.8em;
+        }
+        h3{
+            text-align: center;
+            font-size: 2em;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h3>My Personal Calendar</h3>
     <div class="calendar">
-        <div class="day">S</div>
-        <div class="day">M</div>
-        <div class="day">T</div>
-        <div class="day">W</div>
-        <div class="day">T</div>
-        <div class="day">F</div>
-        <div class="day">S</div>
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
         <div class="date">29</div>
         <div class="date">30</div>
         <div class="date">31</div>
